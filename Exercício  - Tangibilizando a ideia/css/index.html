@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Doces</title>
+    <link rel="stylesheet" a href="css/style.css">
+</head>
+
+<body>
+
+    <Header>
+        <h1>LOJA DE DOCES</h1>
+    </Header>
+
+    <div class="container">
+        <form action="/pedido" name="pedidoonline" method="post">
+            <fieldset>
+                <legend>FAÇA SEU PEDIDO</legend>
+                <div><label>Escolha seu Doce preferido</label></div>
+                <div>
+                    <select name="doces">
+                        <option id="esc-doce" value="opcao" selected>Escolha uma opção</option>
+                        <option id="esc-doce" value=id="esc-doce""doceLeite">Doce de Leite</option>
+                        <option id="esc-doce" value="goiabada">Goiabada</option>
+                        <option id="esc-doce" value="rapadura">Rapadura</option>
+                        <option id="esc-doce" value="suspiro">Suspiro</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <Fieldset>
+                <legend>FORMA DE PAGAMENTO</legend>
+                <div><label>Escolha como Pagar</label></div>
+                <input type="radio" id="pag" name="Pix" value="Pix">Pix</input>
+                <input type="radio" id="pag" name="cartao" value="credito">Cartão de Crédito</input>
+                <input type="radio" id="pag" name="dinheiro" value="dinheiro">Dinheiro</input>
+
+
+            </fieldset>
+
+            <Fieldset>
+                <legend>CADASTRO DO USUÁRIO</legend>
+
+                <div><label>Nome:</label></div>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome">
+
+                <div><label>Endereço:</label></div>
+                <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereco">
+
+                <div><label>Número:</label></div>
+                <input type="text" id="numero" name="numero">
+
+                <div><label>Bairro:</label></div>
+                <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro">
+
+                <div><label>Cidade:</label></div>
+                <input type="text" id="cidade" name="cidade" placeholder="Digite o bairro">
+
+                <div><label>Estado:</label></div>
+                <select name="Estado" id="Estado">
+                    <option value="MG">MG</option>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="BA">BA</option>
+                </select>
+
+
+                <div><Label>Observações</Label> </div>
+                <textarea name="observacao" id="observacoes" rows="4" cols="50"
+                    placeholder="Deixe suas Observações"></textarea>
+
+            </fieldset>
+            <div>
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar Pedido</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div id="rodape">
+          Equipe: Arivaldo L. Camargo, Jonathan Alcantra, Marcelo Pacholak, Marta Pederiva, Paulo Gustavo Matias Ferreira, Steffany Costa
+          Jonathan Alcantara Possoli
+              
+         </div>
+    </footer>
+
+</body>
+
+</html>
